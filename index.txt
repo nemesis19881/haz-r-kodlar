@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dijital Haber & Blog Portalı - Şablon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SON DAKİKA / BANT -->
+  <div class="ticker-bar">
+    <div class="container ticker-container">
+      <span class="ticker-label">⚡ SON DAKİKA</span>
+      <div class="ticker-text">
+        <span>Yapay zeka teknolojilerinde yeni dönem başladı: Küresel yazılım ekosistemindeki son gelişmeler...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">TEKNO<span>HABER</span></a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+      <nav class="nav-menu">
+        <a href="#" class="active">Ana Sayfa</a>
+        <a href="#gundem">Gündem</a>
+        <a href="#teknoloji">Teknoloji</a>
+        <a href="#yazilim">Yazılım</a>
+        <a href="#tasarim">Tasarım</a>
+        <a href="#rehberler">Rehberler</a>
+      </nav>
+
+      <div class="header-search">
+        <input type="text" placeholder="Haber veya makale ara...">
+        <button type="button">🔍</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- KATEGORİ BAR -->
+  <nav class="category-nav">
+    <div class="container category-list">
+      <a href="#" class="active">Tümü</a>
+      <a href="#">🔥 Trendler</a>
+      <a href="#">💻 Yapay Zeka</a>
+      <a href="#">📱 Mobil Uygulamalar</a>
+      <a href="#">🌐 Web3 & Siber Güvenlik</a>
+      <a href="#">🚀 Girişimcilik</a>
+    </div>
+  </nav>
+
+  <!-- HERO / MANŞET HABERİ -->
+  <section class="hero-section">
+    <div class="container hero-grid">
+      <!-- Ana Manşet -->
+      <article class="featured-card">
+        <span class="category-tag tag-tech">TEKNOLOJİ</span>
+        <div class="featured-content">
+          <div class="meta-info">
+            <span>📅 29 Eylül 2026</span> • <span>⏱️ 5 dk okuma</span>
+          </div>
+          <h1 class="featured-title">
+            <a href="#">Geleceğin Yazılım Mimarileri: Serverless ve Micro-Frontend Dönüşümü</a>
+          </h1>
+          <p class="featured-excerpt">
+            Ölçeklenebilirlik ve performans beklentilerinin arttığı günümüzde, modern web mimarilerinin nasıl şekillendiğini ve şirketlerin bu dönüşüme nasıl uyum sağladığını inceliyoruz.
+          </p>
+          <div class="author-box">
+            <span class="author-avatar">👨‍💻</span>
+            <span class="author-name">Ahmet Yılmaz</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Yan Manşetler (2 Adet) -->
+      <div class="sub-featured">
+        <article class="sub-card">
+          <span class="category-tag tag-code">YAZILIM</span>
+          <div class="sub-content">
+            <span class="meta-date">28 Eylül 2026</span>
+            <h3><a href="#">TypeScript 5.x ile Gelen Yeni Özellikler ve Kod Kalitesine Etkileri</a></h3>
+          </div>
+        </article>
+
+        <article class="sub-card">
+          <span class="category-tag tag-design">TASARIM</span>
+          <div class="sub-content">
+            <span class="meta-date">27 Eylül 2026</span>
+            <h3><a href="#">2026 Kullanıcı Deneyimi (UX) Trendleri: Minimalizm ve Erişilebilirlik</a></h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANA İÇERİK & SIDEBAR GRID -->
+  <section class="main-content-section">
+    <div class="container layout-grid">
+      
+      <!-- SOL: HABER LİSTESİ -->
+      <main class="news-feed">
+        <div class="section-title-box">
+          <h2>Son Eklenen Makaleler</h2>
+        </div>
+
+        <div class="articles-list">
+          <!-- Makale 1 -->
+          <article class="article-card">
+            <div class="article-img-placeholder">
+              <span>🚀</span>
+            </div>
+            <div class="article-info">
+              <span class="category-tag tag-tech">Girişimcilik</span>
+              <h3 class="article-title"><a href="#">SaaS Girişimlerinde İlk 1000 Müşteriye Ulaşmanın Yolları</a></h3>
+              <p class="article-excerpt">Pazara giriş stratejileri, içerik pazarlaması ve organik büyüme kanallarının etkin kullanımı üzerine pratik rehber.</p>
+              <div class="article-meta">
+                <span>By Zeynep Kaya</span> • <span>26 Eylül 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Makale 2 -->
+          <article class="article-card">
+            <div class="article-img-placeholder">
+              <span>🔒</span>
+            </div>
+            <div class="article-info">
+              <span class="category-tag tag-code">Siber Güvenlik</span>
+              <h3 class="article-title"><a href="#">Web Uygulamalarında OWASP Top 10 Zafiyetleri ve Korunma Yöntemleri</a></h3>
+              <p class="article-excerpt">SQL Injection, XSS ve CSRF gibi yaygın güvenlik açıklarına karşı alabileceğiniz somut önlemler.</p>
+              <div class="article-meta">
+                <span>By Mehmet Demir</span> • <span>25 Eylül 2026</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Makale 3 -->
+          <article class="article-card">
+            <div class="article-img-placeholder">
+              <span>🎨</span>
+            </div>
+            <div class="article-info">
+              <span class="category-tag tag-design">Tasarım</span>
+              <h3 class="article-title"><a href="#">CSS Subgrid ve Container Queries ile Esnek Tasarımın Gücü</a></h3>
+              <p class="article-excerpt">Karmaşık web arayüzlerini daha az kod ve daha yüksek performansla geliştirmenin modern yolları.</p>
+              <div class="article-meta">
+                <span>By Elif Şahin</span> • <span>24 Eylül 2026</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </main>
+
+      <!-- SAĞ: SIDEBAR (ÇOK OKUNANLAR & YAZARLAR) -->
+      <aside class="sidebar">
+        <!-- En Çok Okunanlar -->
+        <div class="sidebar-widget">
+          <h3 class="widget-title">🔥 En Çok Okunanlar</h3>
+          <ol class="trending-list">
+            <li>
+              <span class="rank">01</span>
+              <div>
+                <a href="#">Clean Code Prensipleri: Sürdürülebilir Kod Yazımı</a>
+                <span class="views">12.4k okunma</span>
+              </div>
+            </li>
+            <li>
+              <span class="rank">02</span>
+              <div>
+                <a href="#">Docker ve Kubernetes Temelleri: Yeni Başlayanlar İçin</a>
+                <span class="views">9.8k okunma</span>
+              </div>
+            </li>
+            <li>
+              <span class="rank">03</span>
+              <div>
+                <a href="#">REST API mi, GraphQL mi? Doğru Seçim Hangisi?</a>
+                <span class="views">8.1k okunma</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <!-- E-Bülten Aboneliği -->
+        <div class="sidebar-widget widget-newsletter">
+          <h3>📬 Haber Bülteni</h3>
+          <p>Haftanın öne çıkan haberleri ve teknik makaleleri her Cuma e-postanıza gelsin.</p>
+          <form class="sidebar-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Bültene abone olundu!');">
+            <input type="email" placeholder="E-posta adresiniz..." required>
+            <button type="submit">Abone Ol</button>
+          </form>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#" class="logo">TEKNO<span>HABER</span></a>
+      <p>&copy; 2026 TeknoHaber. Güncel teknoloji, yazılım ve tasarım dünyası.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
